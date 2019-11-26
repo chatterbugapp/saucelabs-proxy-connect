@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/sh
 
 TAG=$(git rev-parse --short HEAD)
 IMAGE=chatterbugapp/saucelabs-connect-proxy:${TAG}
