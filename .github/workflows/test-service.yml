@@ -1,5 +1,4 @@
 name: Service Example
-
 on:
   push:
     branches:
