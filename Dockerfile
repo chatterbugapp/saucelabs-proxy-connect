@@ -11,4 +11,4 @@ RUN chmod a+x start.sh
 
 EXPOSE 26000 4445
 
-ENTRYPOINT ["/usr/local/bin/start.sh"]
+CMD /usr/local/bin/start.sh

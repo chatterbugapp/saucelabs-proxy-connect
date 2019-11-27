@@ -1,4 +1,4 @@
 #!/bin/sh
 
 nc -vnlp 26000 > /tmp/tunnel-identifer
-exec  /usr/local/bin/sc --tunnel-identifier `cat /tmp/tunnel-identifier` $@
+/usr/local/bin/sc --no-ssl-bump-domains all --tunnel-identifier `cat /tmp/tunnel-identifier` $@
