@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-nc -l 26000 > /tmp/tunnel-identifer
-
-exec /usr/local/bin/sc --tunnel-identifier `cat /tmp/tunnel-identifier` $@
+nc -v -n -l 26000 > /tmp/tunnel-identifer
+exec  /usr/local/bin/sc --tunnel-identifier `cat /tmp/tunnel-identifier` $@
