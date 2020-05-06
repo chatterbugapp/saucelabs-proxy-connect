@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:10.3-slim
 MAINTAINER Joshua Sierles <joshua@chatterbug.com>
 
 WORKDIR /usr/local/bin
