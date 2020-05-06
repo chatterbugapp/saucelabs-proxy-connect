@@ -1,6 +1,7 @@
 FROM debian:10.3-slim
 MAINTAINER Joshua Sierles <joshua@chatterbug.com>
 
+RUN apt-get update && apt-get install -y ca-certificates
 WORKDIR /usr/local/bin
 
 COPY sc sc
